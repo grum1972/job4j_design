@@ -65,7 +65,7 @@ public class CSVReader {
         List<String> list = getData(argsName);
         List<Integer> indexes = getIndexes(argsName, list);
         List<String> listOutput = getListOutput(argsName, list, indexes);
-        if (argsName.get("out").equals("stdout")) {
+        if ("stdout".equals(argsName.get("out"))) {
             listOutput.forEach(System.out::println);
         } else {
             writeData(argsName, listOutput);
