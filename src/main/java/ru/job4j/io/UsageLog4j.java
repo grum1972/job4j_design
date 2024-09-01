@@ -19,5 +19,11 @@ public class UsageLog4j {
 
         LOG.debug("Primitive data type Part 1: byte {}, short : {}, char {}, int : {}", b1, sh, ch, i);
         LOG.debug("Primitive data type Part 2: long {}, boolean : {}, float {}, double : {}", l, isExist, a, b);
+
+        try {
+            throw new Exception("Not supported code");
+        } catch (Exception e) {
+            LOG.error("Exception in log example", e);
+        }
     }
 }
