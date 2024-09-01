@@ -1,0 +1,8 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+<client owner="false" age="50">
+    <address address="Belgorod, Orlova st., 50"/>
+    <autos>
+        <auto>MAN</auto>
+        <auto>DAF</auto>
+    </autos>
+</client>
