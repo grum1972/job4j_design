@@ -38,10 +38,10 @@ select d.name from departments d
          left join employees e on d.id = e.department_id
 		 where e.name is null;		
 
-select * from departments d
+select d.name,e.name from departments d
          left join employees e on d.id = e.department_id;
 		 		 
-select * from employees e
+select d.name,e.name from employees e
          right join departments d on d.id = e.department_id;
 
 create table teens(
